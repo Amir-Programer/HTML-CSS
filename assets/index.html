@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my project</title>
+    <!-- Gooey Button style ------------------ start ---------------->
+    <link rel="stylesheet" href="/assets/css/style(botton2).css">
+    <link rel="stylesheet" href="/assets/css/style(botton).css">
+    <!-- Gooey Button style -------------- end ---------------------->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/util.css" />
     <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css" />
@@ -14,7 +18,7 @@
     <!-- navbaer sevtion --------- start ----------->
     <nav class="blue accent-1 z-depth-5">
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo pink-text text-darken-1 shadow-text-1">Home</a>
+        <a href="#!" class="brand-logo pink-text text-darken-1 shadow-text-1 f-bold">Home</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger pink-text text-darken-1 shadow-text-2"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="sass.html">Sass</a></li>
@@ -46,9 +50,32 @@
    <img src="images/GitHub-Logo.png" alt="github" class="w-full max-w-200 filter_shadow">
    <a href="https://github.com/" class="waves-effect waves-orange btn grey w-full max-w-250 m-t-10 rounded_pill">github</a>
    <a href="https://github.com/Amir-Programer/HTML-CSS" class="waves-effect waves-orange btn grey w-full max-w-250 m-t-10 rounded_pill">Amir-programmer</a>
+    
+    <!-- Gooey Button ----------- start ------------>
+    <main id="app" class="dark">
+        <div class="p-all-1"> 
+          <button type="button">
+               Gooey Button
+          </button>
+        </div>
+      </main>
+      
+      <svg width="0" height="0" style="position: absolute;">
+        <filter id="goo" x="-50%" y="-50%" width="200%" height="200%">
+          <feComponentTransfer>
+            <feFuncA type="discrete" tableValues="0 1"></feFuncA>
+          </feComponentTransfer>
+          <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+          <feComponentTransfer>
+            <feFuncA type="table" tableValues="-5 11"></feFuncA>
+          </feComponentTransfer>
+        </filter>
+      </svg>
+      <!-- Gooey Button ----------- end ------------>
 </section>
     <!-- home section ----------- end ----------->
     
+    <script defer src="/assets/js/main(botton).js"></script>
     <script src="/assets/materialize/js/materialize.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
